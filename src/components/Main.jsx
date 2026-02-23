@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import {Component} from "react";
 
 import Form from "./Form";
 import Tarefas from "./Tarefas";
@@ -22,7 +22,7 @@ export default class Main extends Component {
   componentDidUpdate(prevProps, prevState){
     const { tarefas } = this.state;
 
-    if(tarefas === prevState) return;
+    if(tarefas === prevState.tarefas) return;
 
     localStorage.setItem("tarefas", JSON.stringify(tarefas));
   }

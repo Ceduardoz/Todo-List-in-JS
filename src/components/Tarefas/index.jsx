@@ -1,4 +1,3 @@
-import react from "react";
 import PropTypes from "prop-types";
 
 import { FaEdit, FaWindowClose } from "react-icons/fa";
