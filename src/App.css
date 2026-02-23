@@ -1,0 +1,34 @@
+:root {
+  --color-primary-dark:#0B47BF;
+  --color-primary:#1252A6;
+  --color-primary-muted:#0F528C;
+
+  --color-secundary-dark:#d0cfcf;
+  --color-secundary:#f3f3f3;
+  --color-secundary-muted:#FFFFFF80;
+
+  --color-edit:#41A0F2;
+  --color-delete:#f04c64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body{
+  font-family: sans-serif;
+  background: var(--color-primary-dark) url(/public/images/background/background-mobile.jpg) no-repeat center/cover fixed;
+}
+
+button{
+  cursor: pointer;
+}
+
+@media (min-width: 1180px) {
+  body{
+    background: var(--color-primary-dark) url(/public/images/background/Background-desktop.jpg) no-repeat center/cover fixed
+  }
+}
